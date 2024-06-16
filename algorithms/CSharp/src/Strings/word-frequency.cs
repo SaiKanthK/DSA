@@ -10,13 +10,13 @@ namespace Algorithms.Strings
         public static void Main()
         {
 
-            int result = WordFrequency("The quick brown fox jumps over the lazy dog", "the");//Finding a word multiple times (expects 2)
+            int result = WordFrequencyCount("The quick brown fox jumps over the lazy dog", "the");//Finding a word multiple times (expects 2)
             Console.WriteLine(result);
-            result = WordFrequency("The quick brown fox jumps over the lazy dog", "cat")//Finding a non-existent word (expects 0)
+            result = WordFrequencyCount("The quick brown fox jumps over the lazy dog", "cat");//Finding a non-existent word (expects 0)
             Console.WriteLine(result);
-            result = WordFrequency("This is a TEST", "Test");// Case insensitive test
+            result = WordFrequencyCount("This is a TEST", "Test");// Case insensitive test
             Console.WriteLine(result);
-            result = WordFrequency("This      string has multiple spaces", "string"); // Handles multiple spaces
+            result = WordFrequencyCount("This      string has multiple spaces", "string"); // Handles multiple spaces
             Console.WriteLine(result);
 
         }
@@ -28,7 +28,7 @@ namespace Algorithms.Strings
         /// <param name="wholePhrase">The string to search within.</param>
         /// <param name="word">The word to search for.</param>
         /// <returns>The number of times the word appears in the string, or 0 if not found.</returns>
-        public static int WordFrequency(string wholePhrase, string wordToSearch)
+        public static int WordFrequencyCount(string wholePhrase, string wordToSearch)
         {
             int whole_Length = wholePhrase.Length;
             int word_Length = wordToSearch.Length;
