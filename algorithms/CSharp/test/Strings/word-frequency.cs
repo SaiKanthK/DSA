@@ -11,7 +11,7 @@ namespace Algorithms.CSharp.Test.Strings
         [TestCase("This      string has multiple spaces", "string", 1)] // Handles multiple spaces
         public void TestWordFrequency_ShouldGetExpectedResult(string wholePhrase,string word,int expected)
         {
-            var result = Algorithms.Strings.WordFrequency.WordFrequencyCount(text);
+            var result = Algorithms.Strings.WordFrequency.WordFrequencyCount(wholePhrase, word);
             Assert.AreEqual(expected, result);
         }
     }
