@@ -28,6 +28,7 @@ namespace Algorithms.Strings
         /// <param name="wholePhrase">The string to search within.</param>
         /// <param name="word">The word to search for.</param>
         /// <returns>The number of times the word appears in the string, or 0 if not found.</returns>
+        /// The time and space complexity of this method is O(n)
         public static int WordFrequencyCount(string wholePhrase, string wordToSearch)
         {
             int whole_Length = wholePhrase.Length;
